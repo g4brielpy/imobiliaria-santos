@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/*conf. geral*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+    box-sizing: border-box;
+}
+/*VARIÁVEIS*/
+:root{
+    --cor1: #b0ddfc;
+    --cor2: #1c81c0;
+    --cor3: #fff81d;
+    --cor4: #1d1d1d;
+    --font1: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+/*Cabeçalho | header*/
+header{
+    background-color: var(--cor1);
+    text-align: center;
+    height: 16em;
+}
+.logotipo img{
+    width: 9em;
+    margin: 1em auto;
+}
+header nav a{
+    margin: 1em;
+    color: var(--cor4);
+    text-decoration: none;
+    border-bottom: 2px solid var(--cor4);
+    padding: 4px ;
+}
+
+/*corpo do site | Seção de IMAGENS*/
+.imagem{ /*Estilos com a class 'imagem' | GLOBAL*/
+    text-align: center;
+}
+.imagem img{  /*Estilo para todas as imagens*/
+    width: 100%;
+}
+.imagem img[alt="Banner | Imobiliária"]{
+    max-width: 1024px;
+}
+.banner{
+    margin: 2em 0 4em ;
+}
+.imagem img[alt="Imovel"], .imagem img[alt="Imagens de corretores"]{
+    max-width: 450px;
+}
+
+/*corpo do site | main*/
+main{
+    padding: 0 1em;
+}
+
+main h1{
+    text-align: center;
+    margin: 0.3em auto;
+    font-size: 2em;
+}
+main h2{
+    text-align:  center;
+    font-weight: normal;
+    color: var(--cor2);
+    margin-bottom: 1em;
+}
+main h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor2);
+    margin: 0.5em 0 1em;
+}
+main p{ /*Estilo Global para todos os 'p' */
+    max-width: 850px;
+    margin: 0.6em auto;
+    text-align: justify;
+    line-height: 1.8em
+}
+main p span{
+    font-size: 1.05em;
+    font-weight: bold;
+    color: var(--cor2)
+}
+section{
+    margin: 3em 0;
+}
+.final{ /*ultima seção*/
+    margin-bottom: 1em;
+}
+
+/*Seção de DESTAQUE*/
+.destaque{
+    background-color: var(--cor2);
+    color: #ffffff;
+    padding: 3em 1em;
+    line-height: 2em
+}
+.destaque h3{
+    color: rgb(235, 235, 235);
+}
+.destaque p{
+    max-width: 650px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.destaque p span{
+    color: var(--cor3);
+}
+/*Lista destaque*/
+.destaque ul{
+    width: 150px;
+    margin: 10px auto;
+}
+/*Área CONTATO*/
+.mapa{
+    max-width: 800px;
+    text-align: center;
+    margin: 1em auto;
+}
+.mapa iframe{
+    width: 100%
+}
+.paragrafo-destaque p{
+    max-width: 1100px;
+    background-color: var(--cor4);
+    padding: 0.2em 0.5em;
+    margin-bottom: 1.5em;
+}
+/*Links 'a'*/
+.destaque nav{
+    text-align: center;
+}
+.destaque nav a{
+    display: block;
+    background-color: #ffffff;
+    margin: 10px auto;
+    width: max-content;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: var(--cor2);
+    font-size: 0.99em;
+    line-height: 1.6em;
+}
+html{ /*suavisando scroll dos links*/
+    scroll-behavior: smooth;
+}
+header a:hover{
+    background-color: #69bcf3ab;
+    border-radius: 2px;
+    transition: 1s;
+}
+a{
+    color: var(--cor2);
+}
